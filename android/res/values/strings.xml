@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clash Royale Live Wallpaper Wizard Edition</string>
+    <string name="set_wizard_wallpaper">Set Wizard Wallpaper</string>
+    <string name="set_ice_wizard_wallpaper">Set Ice Wizard Wallpaper</string>
+    <string name="set_electro_wizard_wallpaper">Set Electro Wizard Wallpaper</string>
+    <string name="settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="electric_lines_colours">Electric Lines Colours</string>
+    <string name="three">Three</string>
+    <string name="two">Two</string>
+    <string name="one">One</string>
+    <string name="electric_lines">Electric Lines</string>
+    <string name="meteor">Meteor</string>
+    <string name="fire_spirit">Fire Spirit</string>
+    <string name="fire_type">Fire Type</string>
+    <string name="star_shape">Star Shape</string>
+    <string name="snow_spirit">Snow Spirit</string>
+    <string name="snow_type">Snow Type</string>
+    <string name="snow_intensity">Snow Intensity</string>
+    <string name="snow_speed">Snow Speed</string>
+    <string name="share_application">Share Application</string>
+</resources>

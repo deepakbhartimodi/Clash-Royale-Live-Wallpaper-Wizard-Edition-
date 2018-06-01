@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/snow_speed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snow_speed"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+        <SeekBar
+            android:id="@+id/snow_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/snow_speed_text"
+            android:layout_toRightOf="@+id/snow_speed_text"
+            android:layout_alignStart="@+id/snow_intensity"
+            android:layout_marginRight="25dp"
+            android:layout_alignLeft="@+id/snow_intensity"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/snow_speed_text"
+            android:max="10"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/snow_intensity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snow_intensity"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/snow_speed_text"
+            android:layout_marginStart="20dp" />
+        <SeekBar
+            android:id="@+id/snow_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/snow_intensity_text"
+            android:layout_toRightOf="@+id/snow_intensity_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentEnd="true"
+            android:max="10"
+            android:layout_toEndOf="@+id/snow_intensity_text" />
+
+        <TextView
+            android:id="@+id/snow_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snow_type"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/snow_intensity" />
+
+        <RadioGroup
+            android:id="@+id/snow_type_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/snow_intensity_text"
+            android:layout_alignRight="@+id/snow_intensity"
+            android:layout_below="@+id/snow_type_text"
+            android:layout_alignStart="@+id/snow_intensity_text"
+            android:layout_alignEnd="@+id/snow_intensity">
+
+            <RadioButton
+                android:id="@+id/snow_spirit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snow_spirit"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/star_shaped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/star_shape"
+                android:layout_marginStart="25dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fire_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fire_type"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/snow_type_radio" />
+
+        <RadioGroup
+            android:id="@+id/fire_type_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/snow_intensity_text"
+            android:layout_alignRight="@+id/snow_intensity"
+            android:layout_below="@+id/fire_type_text"
+            android:layout_alignStart="@+id/snow_intensity_text"
+            android:layout_alignEnd="@+id/snow_intensity">
+
+            <RadioButton
+                android:id="@+id/fire_spirit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fire_spirit"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/meteor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/meteor"
+                android:layout_marginStart="25dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/electro_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electric_lines"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fire_type_radio" />
+
+        <RadioGroup
+            android:id="@+id/electric_line_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/snow_intensity_text"
+            android:layout_alignRight="@+id/snow_intensity"
+            android:layout_below="@+id/electro_type_text"
+            android:layout_alignStart="@+id/snow_intensity_text"
+            android:layout_alignEnd="@+id/snow_intensity">
+
+            <RadioButton
+                android:id="@+id/one_electric_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/two_electric_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/two"
+                android:layout_marginStart="25dp" />
+
+            <RadioButton
+                android:id="@+id/three_electric_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/three"
+                android:layout_marginStart="25dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/electro_colour_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electric_lines_colours"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/electric_line_radio" />
+
+        <Spinner
+            android:id="@+id/colour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/snow_speed_text"
+            android:layout_below="@+id/electro_colour_text"
+            android:layout_alignStart="@+id/snow_speed_text" />
+
+        <Spinner
+            android:id="@+id/colour2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/electro_colour_text"
+            android:layout_toRightOf="@+id/colour1"
+            android:layout_toEndOf="@+id/colour1"
+            android:layout_alignLeft="@+id/snow_speed"
+            android:layout_alignStart="@+id/snow_speed" />
+
+        <Button
+            android:id="@+id/save_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colour1"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:layout_alignLeft="@+id/snow_intensity_text"
+            android:layout_alignRight="@+id/snow_intensity"
+            android:text="@string/save"
+            android:layout_alignStart="@+id/snow_intensity_text"
+            android:layout_alignEnd="@+id/snow_intensity" />
+
+    </RelativeLayout>
+</ScrollView>
